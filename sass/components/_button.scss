@@ -1,0 +1,16 @@
+.hero-btn {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  line-height: 1.87em;
+  letter-spacing: 0.06em;
+  color: var(--link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 32px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  cursor: pointer;
+}

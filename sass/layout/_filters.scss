@@ -1,0 +1,33 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn {
+  font-weight: 500;
+  line-height: 1.63em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border: unset;
+  cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.filters .item:not(:last-child) {
+  margin-right: 9px;
+}
