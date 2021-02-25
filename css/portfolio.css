@@ -51,11 +51,29 @@ body {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
+  max-width: 320px;
   margin-right: auto;
+  margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -107,50 +125,12 @@ body {
   color: var(--title-text-color);
 }
 
-.page-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
-}
-
-.page-header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.page-header__nav-site {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.page-header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 93px;
-}
-
 .page-header__list .page-header__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .page-header__link {
   display: block;
-}
-
-.page-header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
 }
 
 .current {
@@ -169,15 +149,6 @@ body {
   border-radius: 2px;
 }
 
-.page-header__contacts .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .contacts-icon-envelope {
   display: block;
   height: 16px;
@@ -192,15 +163,6 @@ body {
   width: 16px;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.page-header__contacts .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .page-header__contacts .item + .item {

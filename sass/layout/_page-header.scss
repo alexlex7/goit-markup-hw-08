@@ -1,21 +1,21 @@
 .page-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
+  // padding-top: 25px;
+  // padding-bottom: 25px;
+  // border-bottom: 1px solid #ececec;
 
   &__container {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
 
   &__nav-site {
-    display: flex;
+    // display: flex;
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    margin-left: 93px;
+    // display: flex;
+    // align-items: center;
+    // margin-left: 93px;
   }
 
   &__list &__item:not(:last-child) {
@@ -27,8 +27,8 @@
   }
 
   &__contacts {
-    display: flex;
-    margin-left: auto;
+    // display: flex;
+    // margin-left: auto;
   }
 }
 
@@ -49,8 +49,8 @@
 }
 
 .page-header__contacts .link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .contacts-icon-envelope {
@@ -70,8 +70,8 @@
 }
 
 .page-header__contacts .item {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .page-header__contacts .item + .item {
