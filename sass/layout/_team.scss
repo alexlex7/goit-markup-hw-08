@@ -1,39 +1,73 @@
-// .team {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-//   text-align: center;
-//   background-color: #f5f4fa;
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+  &-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188em;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 
-//   &-list {
-//     display: flex;
-//     justify-content: space-between;
+.team-wraper {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
 
-//     &-item {
-//       background: #ffffff;
-//       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-//         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//       border-radius: 0px 0px 4px 4px;
+.team-list-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
-//       &-text {
-//         font-size: 16px;
-//         line-height: 1.188;
-//         text-align: center;
-//         letter-spacing: 0.03em;
-//         margin-bottom: 16px;
-//       }
-//     }
-//   }
+.team-item-text {
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
 
-//   &-wraper {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//   }
-//   &-title {
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.188em;
-//     letter-spacing: 0.03em;
-//     color: var(--title-text-color);
-//     margin-bottom: 10px;
-//   }
-// }
+@media screen and (max-width: 767px) {
+  .team-list-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    margin-top: -30px;
+    margin-left: -30px;
+    flex-wrap: wrap;
+  }
+  .team-list-item {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team-list {
+    justify-content: space-between;
+  }
+
+  .team-wraper {
+    padding-bottom: 30px;
+  }
+}

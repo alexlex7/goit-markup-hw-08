@@ -1,4 +1,4 @@
-.hero-btn {
+.btn {
   background-color: var(--accent-color);
   font-weight: 700;
   line-height: 1.87em;
@@ -6,11 +6,36 @@
   color: var(--link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 0;
-  padding: 10px 32px;
+  border: none;
+  width: 200px;
+  height: 50px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.btn:hover,
+.btn:focus {
   cursor: pointer;
+  background-color: #188ce8;
+}
+
+.footer .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.btn-span {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .btn {
+    margin: 0;
+  }
+}
+
+.modal .btn {
+  margin: 0 auto;
 }
