@@ -9,5 +9,6 @@
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
+    @include font($fw: 700, $fs: 36px, $lh: 42px);
   }
 }

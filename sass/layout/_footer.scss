@@ -10,8 +10,10 @@
   }
 }
 
-.footer-list {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-list {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-list-item:not(:last-child) {
