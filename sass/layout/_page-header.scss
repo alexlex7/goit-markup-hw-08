@@ -21,20 +21,22 @@
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 2;
   position: absolute;
   top: 0;
   left: 50%;
   background-color: #fff;
-  width: 100%;
+  width: 100vw;
   max-width: 480px;
-  height: 453px;
+  height: 100vh;
+  max-height: 796px;
 
-  padding-bottom: 60px;
+  padding: 48px 40px;
   transform: translateX(-50%) translateY(-100%);
 
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -42,27 +44,15 @@
   transform: translateX(-50%) translateY(0);
 }
 
-.mobile-nav__item {
-  margin-bottom: 40px;
-}
-
-.mobile-nav__item:last-child {
-  margin-bottom: 0px;
-}
-.mobile-nav__item.current {
-  margin-bottom: 52px;
-}
-
-.mobile-nav__item:last-child {
-  margin-bottom: 60px;
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-menu-contacts-item:not(:last-child) {
   margin-bottom: 16px;
 }
-.mobile-nav__link,
-.mobile-contacts-link {
-  @include font(500, 18px, 21px);
+.mobile-nav__link {
+  @include font(500, 40px, 47px);
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
@@ -74,20 +64,69 @@
   }
 }
 
-.mobile-contacts-link {
-  display: flex;
-  align-items: center;
-  color: var(--primary-text-color);
-}
-
 .mobile-menu-nav,
 .mobile-menu-contacts {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.btn-wraper {
-  position: relative;
+
+.mobile-menu-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts-tel {
+  @include font(500, 34px, 40px);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-contacts-mail {
+  @include font(500, 24px, 28px);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu-social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+
+.mobile-menu-social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.mobile-menu-social-list {
+  display: flex;
+}
+
+.mobile-menu-social-link {
+  text-decoration: none;
+  @include font(500, 18px, 22px);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 .burger-btn,
 .mobile-close-btn {
@@ -115,18 +154,6 @@
   height: 40px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.logo-wraper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 60px;
-
-  border-bottom: 1px solid #ececec;
 }
 
 .current-page {
